@@ -4,7 +4,7 @@
   "description": "Node js CMS application",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Seni Oladokun",
   "license": "ISC",
@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "handlebars": "^4.7.6"
+  },
+  "engines": {
+    "node": "15.5.1"
   }
 }
