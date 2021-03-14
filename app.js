@@ -31,7 +31,7 @@ app.use(methodOverride("newMethod"));
 
 // Configure mongoose to connect to MongoDB
 mongoose
-  .connect(process.env.DB_CONNECTION, { useNewUrlParser: true })
+  .connect(mongoDbUrl, { useNewUrlParser: true })
   .then((response) => {
     console.log("MongoDB connected Successfully");
   })
