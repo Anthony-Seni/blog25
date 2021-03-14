@@ -29,9 +29,12 @@ app.set("view engine", "handlebars");
 /* Method Override Middleware*/
 app.use(methodOverride("newMethod"));
 
+const mongoString =
+  "mongodb+srv://root:r00t@cluster0.1mjtc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 // Configure mongoose to connect to MongoDB
 mongoose
-  .connect(mongoDbUrl, { useNewUrlParser: true })
+  .connect(mongoString, { useNewUrlParser: true })
   .then((response) => {
     console.log("MongoDB connected Successfully");
   })
